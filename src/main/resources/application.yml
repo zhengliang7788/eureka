@@ -4,8 +4,10 @@ spring:
 server:
   port: 8030
 eureka:
+#注册中心不需要检索服务
   server:
     enable-self-preservation: false
+#代表不向服务中心注册自己
   client:
     fetch-registry: false
     register-with-eureka: false
